@@ -1,5 +1,8 @@
 #include <iostream>
-
+#include "NUC1xx.h"
+#include "Driver\DrvSYS.h"
+#include "Driver\DrvGPIO.h"
+#include "Driver\DrvADC.h"
 void callback(void){
     DrvGPIO_ClrBit(E_GPB,11);
     DrvSYS_Delay(100000);

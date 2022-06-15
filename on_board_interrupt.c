@@ -5,11 +5,11 @@
 #include "Driver\DrvADC.h"
 
 
-void callbback(){
-        DrvGPIO_ClrBit(E_GPB, 11);
-        DrvSYS_Delay(100000);
-        DrvGPIO_SetBit(E_GPB, 11);
-        DrvSYS_Delay(100000);
+void callback(){
+    DrvGPIO_ClrBit(E_GPB, 11);
+    DrvSYS_Delay(100000);
+    DrvGPIO_SetBit(E_GPB, 11);
+    DrvSYS_Delay(100000);
 }
 
 void main()
